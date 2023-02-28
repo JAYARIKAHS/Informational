@@ -1,0 +1,23 @@
+HASH FUNCTION
+A mathematical operation that accepts an input (or message) of any length and outputs a fixed-size result, usually a hash value or digest, which is a string of digits and letters. Due to the one-way nature of the hash function's design, it is computationally impossible to infer the initial input message from the hash value.  Data integrity checking, password storage, digital signatures, and message authentication codes are just a few of the many applications of hash functions in the field of encryption. In computer science, they are frequently used for jobs like indexing data in hash tables and looking for duplicate data.
+
+Several characteristics of an effective hash function include:
+
+Determinism: The hash function ought to consistently generate the same output when given the same input.
+Uniqueness: Various incoming messages ought to yield various hash values.
+Non-invertibility: The hash value should not be able to be used to deduce the initial input message.
+Collision resistance: Finding two distinct input messages that generate the same hash value should be challenging.
+
+Modern cryptography makes extensive use of hash functions. There are numerous hash functions available, each with a different degree of security and performance. Examples of popular algorithms include SHA-256, SHA-3, and MD5.
+
+
+SYMMETRIC-KEY ALGORITHM
+Also called a shared secret algorithm, is a type of cryptography that encrypts and decrypts data using the same key.  In other words, the secret key used to encode and decrypt the data is shared by the message's sender and recipient.  Due to their effectiveness and ease of use, symmetric-key algorithms are frequently used in encryption.  They are frequently used to protect communication channels like virtual private networks and to encrypt large amounts of data, like files or complete disk drives. (VPNs).
+
+Block ciphers and stream ciphers are two examples of symmetric-key algorithms that come in many different varieties, whereas stream ciphers encrypt data in a continuous stream, block ciphers encrypt data in fixed-size blocks. AES (Advanced Encryption Standard), Blowfish, and DES are some examples of popular symmetric-key algorithms (Data Encryption Standard).  The requirement for the sender and receiver to safely disclose the secret key is one possible shortcoming of symmetric-key algorithms.  The encrypted data can be decrypted if an adversary can intercept or steal the key.  Key management procedures and methods, such key exchange algorithms, are used to safely communicate the secret key in order to reduce this risk.
+
+
+ASYMMETRIC-KEY ALGORITHM
+Also called a public-key algorithm, is a type of cryptography that encrypts and decrypts data using two separate keys.  These keys are not the same, however they are mathematically similar.  Data encryption uses a single key, also referred to as the public key.  Anyone may freely share this key, which is widely available.  Data encryption is broken using the second key, also known as the private key.  This key is kept private and only the owner has access to it.
+
+Modern cryptography frequently employs asymmetric key algorithms because they offer a higher level of security than symmetric key methods.  They are frequently employed for digital signatures, key exchange, and secure communication.  Asymmetric key methods such as RSA (Rivest-Shamir-Adleman), Diffie-Hellman, and elliptic curve cryptography are frequently employed (ECC).  As the public key can be freely circulated, asymmetric key algorithms have the major benefit of eliminating the necessity for safe key exchange between the sender and the receiver.  Asymmetric key algorithms can be used to encrypt huge volumes of data, although they are frequently slower and need more work than symmetric key methods.
