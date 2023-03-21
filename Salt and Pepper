@@ -1,0 +1,7 @@
+In cryptography, "salt" and "pepper" are both terms used to refer to additional random data that is added to a message or password before it is encrypted.
+
+Before a password is hashed, a random value called salt is applied. Salt is used to make it more challenging for an attacker to break a password using a dictionary or brute-force assault. When salt is included in a password, even if two users share the same password, their salt values will differ, producing separate hash values. This makes it more difficult for an attacker to crack passwords using precomputed tables of hash values.
+
+In contrast, Pepper is a secret key that is attached to a message or password prior to encryption. Pepper is designed to give the encryption process an additional layer of protection. Pepper, in contrast to salt, has a set value that is only known by the program or system handling the encryption. The encrypted message or password cannot be decrypted without also knowing the pepper value, thus even an attacker who obtains access to them will not be able to do it.
+
+Ultimately, by making it more difficult for attackers to decipher passwords or messages, salt and pepper can both contribute to enhancing the security of cryptographic systems. To make sure they offer the required amount of protection, it's crucial to utilize them correctly and in accordance with accepted best practices.
