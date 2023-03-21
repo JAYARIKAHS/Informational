@@ -1,0 +1,137 @@
+BIRTHDAY ATTACK
+BRUTE FORCE ATTACK
+CHOSEN PLAINTEXT ATTACK
+DENIAL OF SERVICE ATTACK
+DICTIONARY ATTACK
+DNS SPOOFING ATTACK
+KNOWN PLAINTEXT ATTACK
+MALWARE ATTACK
+MAN-IN-THE-MIDDLE ATTACK
+RAINBOW TABLE ATTACK
+REPLY ATTACK
+RUBBER HOSE CRYPTANALYSIS
+SIDE-CHANNEL ATTACK
+SOCIAL ENGINEERING ATTACK
+SQL INJECTION ATTACK
+TIMING ATTACK
+ZERO-DAY ATTACK
+
+
+BIRTHDAY ATTACK
+
+A birthday attack is a type of cryptographic attack that takes advantage of the mathematics of probability to exploit the fact that, in a group of randomly chosen people or items, there is a high likelihood that at least two people or items will share the same birthday.
+
+In cryptography, a birthday attack can be used to find collisions in a hash function. A hash function is a mathematical function that takes an input (such as a message or a file) and produces a fixed-size output called a hash value or message digest. Hash functions are widely used in cryptography to ensure the integrity of data and to verify the identity of users or devices.
+
+A collision occurs when two different inputs produce the same hash value. A well-designed hash function should make it extremely difficult to find collisions, even when an attacker has access to many different inputs and can perform millions or billions of hash computations. However, using the birthday attack, an attacker can reduce the time and computational resources required to find a collision.
+
+The birthday attack takes advantage of the birthday paradox, which states that in a group of at least 23 people, there is a greater than 50% chance that two people will share the same birthday. Similarly, in a hash function with a 128-bit output, there is a greater than 50% chance that two different inputs will produce the same hash value after approximately 2^64 computations.
+
+To protect against a birthday attack, cryptographic systems typically use larger hash sizes and ensure that hash functions are resistant to collision attacks. In addition, cryptographic protocols such as digital signatures and message authentication codes may use randomized nonces to prevent attackers from predicting the input to the hash function.
+
+
+BRUTE FORCE ATTACK
+
+This type of attack involves trying every possible combination of characters until the correct key is found. Brute force attacks can be effective against weak encryption schemes, but are usually not practical against strong encryption algorithms due to the enormous amount of time it would take to test all possible keys.
+
+
+CHOSEN PLAINTEXT ATTACK
+
+In this attack, the attacker has the ability to choose which plaintext messages are encrypted and observe the corresponding ciphertext. This allows the attacker to learn information about the encryption algorithm and potentially derive the encryption key. Chosen plaintext attacks are effective against weak encryption algorithms that do not properly obscure the relationship between the plaintext and ciphertext.
+
+
+DENIAL OF SERVICE ATTACK
+
+In this type of attack, the attacker floods a system with traffic, making it unavailable to legitimate users. Denial of service attacks can be carried out through many means, such as flooding the network with traffic or sending malformed requests to a server. For example, a denial of service attack might involve overwhelming a website with traffic in order to make it unavailable to legitimate users.
+
+
+DICTIONARY ATTACK
+
+This attack involves using a list of common words and phrases to guess the password or encryption key. The attacker may use a pre-existing list of known passwords or create their own list based on the target's known interests or personal information. Dictionary attacks are effective against weak passwords or encryption keys that are based on easily guessable words or phrases.
+
+
+DNS SPOOFING ATTACK
+
+In this type of attack, the attacker redirects network traffic by manipulating the Domain Name System (DNS) servers. The attacker may use this technique to redirect users to a fraudulent website or to intercept sensitive information. To defend against DNS spoofing attacks, it is important to use secure DNS servers and to employ secure communication protocols, such as HTTPS.
+
+
+KNOWN PLAINTEXT ATTACK
+
+This attack involves having access to both the encrypted message and the corresponding plaintext message, allowing the attacker to derive the encryption key. The attacker may use this technique to decrypt other messages encrypted using the same key. Known plaintext attacks are effective against weak encryption algorithms that do not properly obscure the relationship between the plaintext and ciphertext.
+
+
+MALWARE ATTACK
+
+In this type of attack, the attacker uses malicious software to gain access to sensitive information or to take control of a computer system. Malware can take many forms, such as viruses, trojans, and ransomware. To defend against malware attacks, it is important to use up-to-date antivirus software and to avoid downloading or installing software from untrusted sources.
+
+
+MAN-IN-THE-MIDDLE ATTACK
+
+In this attack, an attacker intercepts the communication between two parties and can alter or manipulate the data being transmitted. The attacker may use this technique to read, modify, or even inject their own messages into the communication. MitM attacks are particularly effective against unencrypted communications, or those protected by weak encryption protocols.
+
+
+RAINBOW TABLE ATTACK
+
+A password cracking approach known as a rainbow attack uses precomputed hash chains to break passwords. A rainbow attack aims to decode the hashed representation of the password to reveal the plaintext password.
+
+A big table of precomputed hash chains, which are effectively a series of hashes linked together in a chain, are first created by the attacker in a rainbow attack. The table is created by hashing a random plaintext password at first, then using a predefined function, decreasing the hash to a smaller value. Once a predefined number of hashes have been generated, the reduced hash is then utilized as the input for the following hash in the chain.
+
+The attacker can use the table of hash chains to crack passwords by comparing the hashes of a set of passwords they intend to crack to the hashes in the table after it has been constructed. When a hash in the table matches a password's hash, the attacker can utilize the hash chain connected to that hash to deduce the password's plaintext value.
+
+Because salt values make it more challenging to crack passwords using precomputed hash tables, rainbow attacks are frequently employed to crack passwords protected by hash functions that include salt values. Given enough time and resources, a determined attacker can still perform a rainbow assault to break passwords even with a salt value. Strong, original passwords and hash functions that are resistant to such attacks should both be used in order to prevent rainbow attacks.
+
+
+REPLY ATTACK
+
+In this type of attack, the attacker intercepts a network communication and then re-transmits it to the original recipient or to another system. This can cause the recipient to perform an action multiple times or to receive false information. To prevent replay attacks, communications should be secured with a protocol that includes message authentication codes or timestamps.
+
+
+RUBBER HOSE CRYPTANALYSIS ATTACK
+
+Rubber Hose Cryptanalysis Attack is a form of physical coercion or torture used to extract sensitive information, such as passwords or decryption keys, from a victim. The term "rubber hose" refers to the use of physical violence or threats to force the victim to disclose the information, as if the attacker is beating the victim with a rubber hose.
+
+This type of attack relies on the assumption that the victim knows the information that the attacker wants to obtain and is willing to reveal it under duress. Rubber Hose Cryptanalysis Attack can be difficult to defend against, as the attacker can use a range of physical and psychological techniques to intimidate or manipulate the victim.
+
+To protect against this type of attack, individuals and organizations can take a number of precautions, including:
+
+Implementing strong encryption and access controls to protect sensitive information.
+
+Educating employees on the risks of social engineering attacks and how to recognize and resist coercion tactics.
+
+Limiting access to sensitive information to only those individuals who need it to perform their job functions.
+
+Implementing physical security measures, such as access controls, security cameras, and security guards, to prevent unauthorized individuals from accessing sensitive areas.
+
+Creating policies and procedures that outline how to respond to and report incidents of physical coercion or other security breaches.
+
+
+SIDE-CHANNEL ATTACK
+
+This type of attack targets the physical hardware or software used in the encryption process, rather than the cryptographic algorithm itself. Side-channel attacks exploit weaknesses in the implementation of the encryption system, such as measuring the power consumption or electromagnetic radiation emitted by the hardware during encryption operations. These attacks can be difficult to defend against because they do not rely on weaknesses in the cryptographic algorithm itself.
+
+
+SOCIAL ENGINEERING ATTACK
+
+In this type of attack, the attacker manipulates people to divulge sensitive information, such as passwords or personal information. Social engineering attacks can take many forms, such as phishing emails or pretexting phone calls. To defend against social engineering attacks, it is important to educate users about the risks and to implement policies to prevent unauthorized disclosure of sensitive information.
+
+
+SQL INJECTION ATTACK
+
+This type of attack involves injecting malicious SQL code into a database query, allowing the attacker to access or modify sensitive information in the database. For example, an SQL injection attack might involve injecting code into a login form to bypass authentication and gain access to sensitive data.
+
+
+TIMING ATTACK
+
+In this type of attack, the attacker measures the time it takes a computer to perform certain operations, such as comparing two strings or performing modular exponentiation. By analyzing the timing differences, the attacker may be able to deduce sensitive information, such as a secret key or password. To defend against timing attacks, implementations should use constant-time algorithms or randomize the execution time of sensitive operations.
+
+
+ZERO-DAY ATTACK
+
+A zero-day attack (also known as zero-hour or day zero attack) is a type of cyber attack that exploits a previously unknown vulnerability or weakness in a software application, operating system, or hardware device. The term "zero-day" refers to the fact that the vulnerability is unknown to the software vendor and has not yet been patched or fixed.
+
+Zero-day attacks can be extremely dangerous because they can be launched without any warning or time for the targeted organization to prepare or defend against the attack. This gives the attacker a significant advantage, allowing them to steal data, install malware, or gain unauthorized access to a system or network.
+
+Zero-day vulnerabilities can be discovered by cyber criminals, nation-state actors, or independent security researchers. Once a zero-day vulnerability is discovered, the attacker may keep it secret and use it for their own purposes, sell it to other attackers on the black market, or disclose it to the software vendor so that it can be patched.
+
+To protect against zero-day attacks, it's important to keep software and operating systems up-to-date with the latest security patches and updates, use strong passwords and multi-factor authentication, and educate employees about the risks of phishing and other social engineering attacks.
+
